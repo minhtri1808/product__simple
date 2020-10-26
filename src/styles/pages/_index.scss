@@ -1,0 +1,50 @@
+body {
+    --bodyBackground: #eeeeee;
+    --boyText: #161616;
+}
+
+.web404 {
+    background: var(--bodyBackground);
+    [class="col-"] {
+        margin-bottom: 20px;
+    }
+}
+
+.item__content {
+    padding: 10px;
+    border: 1px solid #d6d6d6;
+    border-top: 0;
+}
+
+.item__img {
+    overflow: hidden;
+    max-height: 300px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-size: cover;
+    }
+}
+
+.item__name {
+    margin-top: 10px;
+    h3 {
+        font-size: 2.4rem;
+        color: var(--boyText);
+    }
+}
+
+.item__desc {
+    margin-top: 10px;
+    p {
+        color: var(--boyText);
+        font-size: 1.4rem;
+        //combo giới hạn dòng
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+}
